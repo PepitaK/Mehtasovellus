@@ -13,7 +13,10 @@ request.onload = function() {
   // Begin accessing JSON data here
   var data = JSON.parse(this.response);
 
-  data.response.forEach(function(element) {
+
+
+
+data.response.forEach(function(element) {
 
 var tiedot = "<h1> " + element.locationName + "</h1>"
 + "<p> Pysähdyspaikkoja: " + element.points.length + "<br>"
@@ -21,17 +24,17 @@ var tiedot = "<h1> " + element.locationName + "</h1>"
 + "Sää: " + element.weather.weather + " <br>"
 + "Reittejä: " + element.routes.length +  "</p>";
 
-var i ; var text = "";
+
+var i ; var text = " <h1> Reittien pituudet:</h1>";
 for (i = 0; i < element.routes.length; i++) {
   text += i+1 + ". reitin pituus: " + Math.round(element.routes[i].length * 100) / 100 + " km <br>";
 }
-
     // Create a div with a card class
       const button = document.createElement("button");
       button.setAttribute("class", "card");
       button.onclick = function(){
     document.getElementById("infolaatikko").innerHTML = tiedot;
-    document.getElementById("text").innerHTML += text;
+    document.getElementById("text").innerHTML = text;
     document.getElementById("overlay").style.display = "block";
 };
       // Create an h1 and set the text content to the film's title
