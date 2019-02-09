@@ -18,7 +18,7 @@ request.onload = function() {
 
 data.response.forEach(function(element) {
 
-var tiedot = "<h1> " + element.locationName + "</h1>"
+var tiedot = "<h6> " + element.locationName + "</h6>"
 + "<p> Pysähdyspaikkoja: " + element.points.length + "<br>"
 + "Lämpötila: " + element.weather.temperature + " °C <br>"
 + "Sää: " + element.weather.weather + " <br>"

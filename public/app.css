@@ -1,9 +1,9 @@
 .card {
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
+  padding: 3px;
   text-align: center;
-  margin: 25px;
-  padding: 5px;
+  margin: 10px;
   background: white;
   display: inline-block;
   border-radius: 110px;
@@ -17,7 +17,7 @@
 }
 
 body {
-  width: 500px;
+  width: 100%;
   margin: auto;
 }
 
@@ -32,6 +32,13 @@ h2 {
 h1 {
   font-size: 18px;
   padding-top: 15px;
+  word-wrap: break-word;
+  font-family: 'Staatliches', cursive;
+}
+
+h6 {
+  font-size: 28px;
+  margin-bottom:-0px;
   word-wrap: break-word;
   font-family: 'Staatliches', cursive;
 }
@@ -67,7 +74,7 @@ html {
 }
 
 #infolaatikko {
-  width: 500px;
+  width: 300px;
   padding: 20px;
   height: 500px;
   background-color: white;
