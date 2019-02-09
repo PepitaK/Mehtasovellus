@@ -41,17 +41,13 @@ for (i = 0; i < element.routes.length; i++) {
       const h1 = document.createElement("h1");
       h1.textContent = element.locationName;
       // Each card will contain an h1 and a p
-      const p3 = document.createElement("p");
-      p3.textContent = "Sää: " + element.weather.weather;
-
       const p4 = document.createElement("p");
-      p4.textContent = "Lämpötila: " + element.weather.temperature + " °C";
+      p4.textContent = element.weather.weather + ", " + element.weather.temperature + " °C";
 
       const p5 = document.createElement("p");
       p5.textContent = "Pysähdyspaikat: " + element.points.length;
 
       button.appendChild(h1);
-      button.appendChild(p3);
       button.appendChild(p4);
       button.appendChild(p5);
 
