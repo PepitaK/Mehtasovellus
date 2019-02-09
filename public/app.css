@@ -86,7 +86,7 @@ html {
 }
 
 #header {
-  height: 10px;
+  height: 40px;
   font-family: 'Staatliches', cursive;
   font-size: 50px;
   padding: 20px;
@@ -94,7 +94,9 @@ html {
   margin: auto;
   margin-bottom: 30px;
   text-align: center;
+  border-bottom: 1px solid white;
 }
+
 #text {
   color: black;
   font-size: 15px;
